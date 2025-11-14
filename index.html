@@ -358,12 +358,17 @@
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="hero-image"></div>
-    <div class="hero-content">
-      <h1 class="glow">Unlock the chance to get the Cultist King Mace | 99 Nights.</h1>
-      <p><b>Please wait 5 seconds after clicking the Unlock button to gain access. <br> Experience the ultimate adventure on your 99 Nights.</b></p>
-      <button class="download-btn floating" onclick="startCPA()">Unlock Cultist King Mace</button>
-    </div>
+    <div class="hero-content" style="text-align:center; padding:30px; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color:white; border-radius:15px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); max-width:600px; margin:50px auto;">
+  <h1 class="glow" style="font-size:2em; text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;">Unlock the chance to get the Cultist King Mace | 99 Nights</h1>
+  
+  <p style="font-size:1em; margin-top:15px;"><b>Please wait <span id="countdown">5</span> seconds after clicking the Unlock button to gain access.<br>Experience the ultimate adventure on your 99 Nights.</b></p>
+  
+  <button class="download-btn floating" 
+          style="padding:15px 25px; font-size:1.2em; color:white; background: linear-gradient(45deg, #ff0000, #ff9900); border:none; border-radius:10px; cursor:pointer; box-shadow: 0 5px 15px rgba(0,0,0,0.3);"
+          onclick="startCPA()">Unlock Cultist King Mace</button>
+  
+  <p style="margin-top:15px; font-size:0.9em; color:#ffcc00;">Available only for <span id="playersLeft">10</span> random players!</p>
+</div>
   </section>
 
   <!-- Features Section -->
