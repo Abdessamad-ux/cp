@@ -1365,21 +1365,23 @@ background-size: cover;
 
   <div id="gem-packs" class="packs fade fade-in">
    
-    <div class="pack">
-      <img src="https://i.postimg.cc/cLCNL6Z0/700-diamonds.webp" alt="Pack 1">
-      <div>Diamonds</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/cLCNL6Z0/700-diamonds.webp')">Unlock</button>
-    </div>
+    
 	<div class="pack">
       <img src="https://i.postimg.cc/j250r72F/no-Filter-(1).webp" alt="Pack 1">
-      <div>Cyborg Lasser</div>
+      <div>Cyborg Lasser - 185 Spots Left</div>
       <button onclick="openModal('Grape', 'https://i.postimg.cc/j250r72F/no-Filter-(1).webp')">Unlock</button>
     </div>
     
     <div class="pack">
       <img src="https://i.postimg.cc/7PpP2Y9V/Cyborgclass.webp" alt="Pack 1">
-      <div>Cyborg Class</div>
+      <div>Cyborg Class – 301 Spots Left
+      </div>
       <button onclick="openModal('Grape', 'https://i.postimg.cc/7PpP2Y9V/Cyborgclass.webp')">Unlock</button>
+    </div>
+    <div class="pack">
+      <img src="https://i.postimg.cc/cLCNL6Z0/700-diamonds.webp" alt="Pack 1">
+      <div>Diamonds - 57 Spots Left</div>
+      <button onclick="openModal('Grape', 'https://i.postimg.cc/cLCNL6Z0/700-diamonds.webp')">Unlock</button>
     </div>
     <div class="pack">
       <img src="https://i.postimg.cc/g2zCwfCs/Pyromancerclass.webp" alt="Pack 2">
@@ -1520,7 +1522,7 @@ background-size: cover;
       <div class="roblox-loader" id="roblox-loader">
   <div></div><div></div><div></div><div></div>
 </div>
-      <p>Generating...</p>
+      <p>Checking available spots...</p>
       <div class="progress-bar">
         <div id="progress"></div>
       </div>
@@ -1649,7 +1651,7 @@ background-size: cover;
           step++;
         } else {
           clearInterval(interval);
-          verificationMessage.textContent = "LAST STEP!";
+          verificationMessage.textContent = "Spots still available!";
           verificationMessage.style.color = "green";
           preVerifyMessage.style.display = 'block';
           verifyButton.classList.add('active');
