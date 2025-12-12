@@ -10,30 +10,8 @@
     var CIkMS_JjC_kuiVuc={"it":4570683,"key":"3ba47"};
   </script>
 
-	<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Detect the user's browser language
-    var userLang = navigator.language || navigator.userLanguage;
-    userLang = userLang.substring(0, 2); // "fr", "ar", "es", etc.
 
-    // List of languages your site should auto-translate into
-    var supported = ["ar","fr","es","pt","tr","id","de","it","nl","pl","ro","vi","th","ru","ja","ko"];
 
-    // If visitor’s language is supported and not English, translate automatically
-    if (supported.includes(userLang) && userLang !== "en") {
-        var translateURL =
-            "https://translate.google.com/translate?sl=en&tl=" +
-            userLang +
-            "&u=" +
-            encodeURIComponent(window.location.href);
-
-        // Avoid infinite redirect loops
-        if (!window.location.href.includes("translate.googleusercontent.com")) {
-            window.location.href = translateURL;
-        }
-    }
-});
-</script>
 
   <script src="https://da4talg8ap14y.cloudfront.net/47102aa.js"></script>
   <script>var xfContentLocker;
@@ -1382,6 +1360,10 @@ background-size: cover;
 <link rel="me" href="https://www.blogger.com/profile/08093615751670618814" />
 </head>
 <body>
+
+    <div id="google_translate_element" style="display:none;"></div>
+
+
  
   
   <div class="header">
@@ -1580,7 +1562,47 @@ background-size: cover;
         </div>
     </div>
 
+
+
+
     
+    <script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',  // your default language
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+// Detect user language
+var userLang = (navigator.language || navigator.userLanguage).split('-')[0]; // e.g., "fr"
+
+// Load Google Translate script
+var gtScript = document.createElement('script');
+gtScript.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+document.body.appendChild(gtScript);
+
+// Try to auto-select detected language after load
+gtScript.onload = function() {
+    setTimeout(function() {
+        var select = document.querySelector('.goog-te-combo');
+        if(select && select.value !== userLang){
+            select.value = userLang;
+            select.dispatchEvent(new Event('change'));
+        }
+    }, 1500); // wait 1.5 seconds to ensure Google Translate is ready
+};
+</script>
+
+
+
+
+
+
+
+
+
+
 
   <script>
     function showCoins() {
@@ -1766,6 +1788,9 @@ function closePurchasePopup() {
 
 
 <script>
+
+
+
 
   (function(window) {
 
