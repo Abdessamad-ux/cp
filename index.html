@@ -9,6 +9,32 @@
   <script type="text/javascript">
     var CIkMS_JjC_kuiVuc={"it":4570683,"key":"3ba47"};
   </script>
+
+	<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Detect the user's browser language
+    var userLang = navigator.language || navigator.userLanguage;
+    userLang = userLang.substring(0, 2); // "fr", "ar", "es", etc.
+
+    // List of languages your site should auto-translate into
+    var supported = ["ar","fr","es","pt","tr","id","de","it","nl","pl","ro","vi","th","ru","ja","ko"];
+
+    // If visitor’s language is supported and not English, translate automatically
+    if (supported.includes(userLang) && userLang !== "en") {
+        var translateURL =
+            "https://translate.google.com/translate?sl=en&tl=" +
+            userLang +
+            "&u=" +
+            encodeURIComponent(window.location.href);
+
+        // Avoid infinite redirect loops
+        if (!window.location.href.includes("translate.googleusercontent.com")) {
+            window.location.href = translateURL;
+        }
+    }
+});
+</script>
+
   <script src="https://da4talg8ap14y.cloudfront.net/47102aa.js"></script>
   <script>var xfContentLocker;
 var __cfRLUnblockHandlers = 1;
