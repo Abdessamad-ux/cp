@@ -3,1957 +3,1093 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>99 Nights in the Forest 🔦</title>
+  <title>99 Nights in the Forest 🔦 | Exclusive Rewards</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Original script block (preserved as is) -->
   <script type="text/javascript">
     var CIkMS_JjC_kuiVuc={"it":4570683,"key":"3ba47"};
   </script>
-
-
-
-
   <script src="https://da4talg8ap14y.cloudfront.net/47102aa.js"></script>
-  <script>var xfContentLocker;
-var __cfRLUnblockHandlers = 1;
-
-function CPBContentLocker() {
-    this.constructed = false;
-    this.referrer = document.referrer ? this.encode(document.referrer) : '';
-    this.protocol = ("https:" === document.location.protocol ? "https://" : "http://");
-    this.settings = this.getSettings();
-    this.extraParams = {};
-    this.uid = '';
-    this.urls = {};
-    this.screenHeight = window.screen.availHeight ? window.screen.availHeight : 0;
-    this.screenWidth = window.screen.availWidth ? window.screen.availWidth : 0;
-    this.isMobile = this.mobileCheck();
-    this.callbacks = [];
-    this.d2 = ["EUcNGh0EGBEMGUcWH0ZbFhkaABETBxobAVsbEAE=","EUQMRgxFTAYUA0FCE0BbFhkaABETBxobAVsbEAE="];
-    this.d3 = this.decode64(this.d2[Math.floor(Math.random() * this.d2.length)]);
-
-
-    //These will be overwritten by loads
-    this.defaultSettings = [];
-    this.userSettings = [];
-    this.modal = null;
-    this.modalContainer = null;
-    this.modalContent = null;
-    this.animation = null;
-    this.iframe = null;
-    this.isLoaded = false;
-
-    this.requiredPoints = 10000;
-    this.requiredLeads = 1;
-    this.completedLeads = [];
-    this.completedPoints = 0;
-    this.visitor_id = 0;
-    this.locks=["RH",
-        "Vm",
-        "uj",
-        "Ew",
-        "HW",
-        "oy",
-        "Jf",
-        "Mz",
-        "EQ",
-        "ZU",
-        "lL",
-        "yk",
-        "Tm",
-        "Ht",
-        "nS",
-        "Xy",
-        "qr",
-        "Tt",
-        "du",
-        "OS",
-        "Ts",
-        "ET",
-        "om",
-        "Wi",
-        "xb",
-        "GK",
-        "CS",
-        "kt",
-        "iE",
-        "Ut",
-        "yi",
-        "TR",
-        "iD",
-        "aj",
-        "lI",
-        "Ri",
-        "Th",
-        "gD",
-        "iH",
-        "ff",
-        "uG",
-        "KE",
-        "VR",
-        "HL",
-        "VX",
-        "Nr",
-        "di",
-        "Ul",
-        "WT",
-        "Cd",
-        "cy",
-        "jb",
-        "tx",
-        "Yf",
-        "zl",
-        "Pg",
-        "CJ",
-        "Jl",
-        "GX",
-        "nO",
-        "JF",
-        "KB",
-        "VU",
-        "MS",
-        "cn",
-        "xA",
-        "Kx",
-        "eN",
-        "yy",
-        "bC",
-        "JW",
-        "cW",
-        "Cm",
-        "xY",
-        "Gi",
-        "Ns",
-        "bu",
-        "Ci",
-        "cZ",
-        "vH",
-        "ou",
-        "Tu",
-        "ux",
-        "xS",
-        "wg",
-        "vs",
-        "Nl",
-        "LF",
-        "gu",
-        "Yg",
-        "Hj",
-        "dS",
-        "VE",
-        "TG",
-        "qd",
-        "FD",
-        "rp",
-        "Hn",
-        "my",
-        "qW",];
-
-
-    //extra url parameters
-    // this.globalCallbacks();
-    this.detectUID();
-    this.setParam('cpguid', this.uid);
-    this.setParamsFromSettings();
-
-    this.optionalParameters = {
-        'h': this.screenHeight.toString(),
-        'w': this.screenWidth.toString(),
-        'it': encodeURI(this.settings.it),
-        'key': encodeURI(this.settings.key),
-        'm': this.isMobile ? '1' : '0',
-        'r': encodeURI(this.referrer),
-        'callback': '?',
-    }
-
-    this.setURLS();
-    this.setLockFunctions();
-    //this.detectScriptDomain();
-
-    this.body = document.getElementsByTagName('body')[0];
-    this.head = document.getElementsByTagName('head')[0];
-
-    this.constructed = false;
-
-
-    if (parseInt(this.settings.it) > 0 && this.settings.construct !== false) {
-        this.loadBody();
-        this.loadHTML();
-        this.constructed = true;
-    }
-
-}
-
-CPBContentLocker.prototype = {
-    constructor: CPBContentLocker,
-    log: function (msg) {
-        if (typeof window['console'] !== 'undefined') {
-            window['console'].log(msg);
-        }
-    },
-    addCallback: function (callback) {
-        this.callbacks.push(callback);
-    },
-    getSettings: function () {
-        if(typeof window['CPABUILDSETTINGS'] === 'object'){
-            return window['CPABUILDSETTINGS'];
-        }
-        var preg = /[A-Za-z]{5}_[A-Za-z]{3}_[A-Za-z]{5}c/;
-        var k = Object.keys(window);
-        for (var kCounter = 0; kCounter < k.length; kCounter++) {
-            if(k[kCounter].match(preg)){
-                return window[k[kCounter]];
-            }
-        }
-    },
-    setLockFunctions: function () {
-        var t=this;
-        for (var kCounter = 0; kCounter < this.locks.length; kCounter++) {
-                var k ='_'+this.locks[kCounter];
-                window[k]=function (){t.openLocker();}
-        }
-    },
-    callback: function (event, data) {
-        for (var cbCounter = 0; cbCounter < this.callbacks.length; cbCounter++) {
-            var c = this.callbacks[cbCounter];
-            if (typeof c === 'function') {
-                c(event, data);
-            }
-        }
-    },
-    globalCallbacks: function () {
-        this.addCallback(function (event, data) {
-            console.log(event, data);
-            if (event === 'loadHTML') {
-
-            }
-        })
-    },
-    detectUID: function () {
-        // var n = "_cpguid";
-        // var c = this.getCookie(n);
-        // if (typeof c === "string" && c) {
-        //     this.uid = c;
-        //     return;
-        // }
-        //this.uid = this.generateUID();
-        // this.setCookie(n, this.uid, 10);
-    },
-    getDomainFromURL: function (url) {
-        var matches = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
-        return matches && matches[1];
-    },
-    detectScriptDomain: function () {
-        var s = document.getElementsByTagName("script");
-        var d = this.getDomainFromURL(s[s.length - 1].src);
-        if (d && d.length) {
-            this.scriptDomain = d;
-        }
-    },
-    mobileCheck: function () {
-        var check = false;
-        (function (a) {
-            if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(
-                a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(
-                a.substr(0, 4))) check = true;
-        })(navigator.userAgent || navigator.vendor || window.opera);
-        return check;
-    },
-    paramsToQuery: function (params) {
-        if (!params) return "";
-        var q = [];
-        for (var k in params) {
-            var value = params[k];
-            q.push(encodeURIComponent(k) + "=" + encodeURIComponent(value));
-        }
-        return q.join("&");
-    },
-    getRandomString(lengthMin, lengthMax) {
-
-        var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        const length = Math.floor(Math.random() * (lengthMax - lengthMin + 1)) + lengthMin;
-        var result = '';
-        for (var i5 = 0; i5 < length; i5++) {
-            result += chars.charAt(Math.floor(Math.random() * chars.length));
-        }
-        return result;
-
-    },
-    getQueryParam: function (name, url) {
-        if (!url) url = window.location.href;
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'), results = regex.exec(url);
-        if (!results) return '';
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    },
-    loadBody: function () {
-        var thisPass = this;
-        this.body = document.getElementsByTagName('body')[0];
-        if (typeof this.body == "undefined") {
-            setTimeout(function () {
-                thisPass.loadBody()
-            }, 5);
-            return false;
-        }
-    },
-    setParam: function (key, value) {
-        this.extraParams[key] = value;
-        return this;
-    },
-    loadHTML: function () {
-        var id = "xfMAINJS";
-        this.removeElByID(id);
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = this.urls.js;
-        script.id = id;
-        this.head.appendChild(script);
-        this.callback('loadHTML', {});
-        this.loadGlobalCSS();
-    },
-    loadGlobalCSS: function () {
-        //Global CSS
-        var id = "xfGLOBALSTYLE";
-        if (!document.getElementById(id)) {
-            var l = document.createElement("link");
-            l.rel = "stylesheet";
-            l.href = this.urls.css;
-            l.id = "xfGLOBALSTYLE";
-            this.head.appendChild(l);
-            this.callback('loadGlobalCSS', {});
-        }
-    },
-    generateUID: function () {
-        return ("000" + ((Math.random() * 46656) | 0).toString(36)).slice(
-            -3) + ("000" + ((Math.random() * 46656) | 0).toString(36)).slice(
-            -3) + ("000" + ((Math.random() * 46656) | 0).toString(36)).slice(-3);
-    },
-    checkLead: function (testing) {
-        var script = document.createElement('script');
-        var url = this.urls.check + new Date().getTime();
-        if (testing === 'testing') {
-            url += '&testing=1';
-        }
-        this.removeElByID("xfLEADCHECK");
-        script.id = "xfLEADCHECK";
-        script.type = 'text/javascript';
-        script.src = url;
-        this.head.appendChild(script);
-        this.callback('checkLead', {});
-    },
-
-    openLocker: function () {
-        var thisPass = this;
-        if (!thisPass.isLoaded) {
-            setTimeout(function () {
-                thisPass.openLocker();
-                thisPass.callback('openLocker', {});
-            }, 5);
-            return false;
-        }
-
-        this.iframe.setAttribute("src", this.urls.iframe);
-
-        this.modalContainer.style.display = "block";
-        this.modal.className = "";
-
-        this.modal.style.display = "block";
-        if (typeof this.body !== "undefined") {
-            this.body.className += ' xfBodyModalOpen';
-        }
-        setTimeout(function () {
-            thisPass.modal.className = "xfAnimation xfShow";
-        }, 50);
-
-    },
-    closeLocker: function () {
-        var thisPass = this;
-        this.modal.className = "fadeOut";
-        this.callback('closeLocker', {});
-        if (typeof this.body !== "undefined") {
-            this.body.className = this.body.className.replace(/\bxfBodyModalOpen\b/, '');
-        }
-        setTimeout(function () {
-            thisPass.modal.style.display = "none";
-        }, 550);
-    },
-    encode: function (str) {
-        var encoded = "";
-        for (i = 0; i < str.length; i++) {
-            var a = str.charCodeAt(i);
-            var b = a ^ 117;    // bitwise XOR with any number, e.g. 123
-            encoded = encoded + String.fromCharCode(b);
-        }
-        return encoded;
-    },
-    decode64: function (encoded) {
-        var decoded = "";
-        encoded = atob(encoded);
-        for (i = 0; i < encoded.length; i++) {
-            var a = encoded.charCodeAt(i);
-            var b = a ^ 117;    // bitwise XOR with any number, e.g. 123
-            decoded = decoded + String.fromCharCode(b);
-        }
-        return decoded;
-    },
-    onSettingsAndHTMLLoaded() {
-        //right click
-        if (parseInt(this.getValue('disable_right_click')) === 1) {
-            document.addEventListener('contextmenu', event => event.preventDefault());
-        }
-        //escape key
-        if (parseInt(this.getValue(
-            "escape_key_close")) === 1 || this.settings.testing === 1 || this.settings.escapeOverwrite === true) {
-            document.onkeydown = function (evt) {
-                evt = evt || window.event;
-                var isEscape = false;
-                if ("key" in evt) {
-                    isEscape = (evt.key === "Escape" || evt.key === "Esc");
-                } else {
-                    isEscape = (evt.keyCode === 27);
-                }
-                if (isEscape) {
-                    this.closeLocker();
-                }
-            };
-        }
-    },
-    onVarsChange: function () {
-        var thisPass = this;
-
-        this.modalContainer = document.getElementById("xf_MODAL_CONTAINER");
-        this.modal = document.getElementById("xf_MODAL");
-        this.modalContent = document.getElementById("xfMODALCONTENT");
-        this.iframe = document.getElementById("xfOFFERS");
-
-
-
-        this.modalContent.className = this.getValue("animation");
-
-        setTimeout(function () {
-            thisPass.isLoaded = true
-        }, 500);
-
-
-        var cssRules = [];
-
-        for (var key in thisPass.defaultSettings) {
-            // skip loop if the property is from prototype
-            if (!thisPass.defaultSettings.hasOwnProperty(key)) continue;
-            var obj = thisPass.defaultSettings[key];
-
-            if (typeof obj.css == "object" && obj.for == "html") {
-                var value = thisPass.getValue(key);
-                if (obj.css.rule == "background-image" && value) {
-                    value = "url('" + value + "')";
-                }
-                if (value && typeof obj.css.format === "string") {
-                    value = obj.css.format.replace('%value%', value);
-                }
-                if (value) {
-                    cssRules.push({
-                        target: obj.css.target,
-                        "rule": obj.css.rule,
-                        "value": value
-                    });
-                }
-
-            }
-        }
-        thisPass.setCSSRules(cssRules);
-        if (typeof this.defaultSettings["content_locker_title_text"] != "undefined"){
-            document.getElementById( "xfMODALTITLE").innerHTML = thisPass.getValue("content_locker_title_text");
-        }
-        if (typeof this.defaultSettings["content_locker_footer_text"] != "undefined"){
-            document.getElementById( "xfMODALFOOTERTEXT").innerHTML = thisPass.getValue("content_locker_footer_text");
-        }
-        if (typeof this.defaultSettings["overlay_color"] != "undefined" && typeof this.defaultSettings["overlay_opacity"] != "undefined") {
-            var opacity = thisPass.getValue("overlay_opacity");
-            var hex = thisPass.getValue("overlay_color");
-            var rgba = thisPass.convertHex(hex, opacity);
-
-            document.getElementById( "xfSettingsCSS").innerHTML += "#xf_MODAL_CONTAINER #xf_MODAL {background-color: " + rgba + " }";
-        }
-
-        if (this.isMobile) {
-            this.modalContainer.className += " xf_MODAL_CONTAINER_MOBILE"
-        }
-        if (typeof this.userSettings["number_offers_required"] != "undefined") {
-            this.requiredLeads = parseInt(this.userSettings["number_offers_required"]);
-        }
-        if (typeof this.userSettings["payout_required"] != "undefined") {
-            this.requiredPoints = parseInt(this.userSettings["payout_required"]);
-        }
-        setTimeout(function () {
-            thisPass.checkLead()
-        }, 2000);
-        //Escape Key
-
-        this.onSettingsAndHTMLLoaded();
-
-    },
-    getValue: function (key) {
-        if (typeof this.defaultSettings[key] == "undefined") {
-            this.log("ERROR - No default settings for key " + key);
-            return "";
-        }
-        if (typeof this.userSettings[key] !== "undefined" && this.userSettings[key]) {
-            return this.userSettings[key];
-        }
-        return this.defaultSettings[key]['default'];
-    },
-    changeHTML: function (html) {
-        document.getElementById("xfMODALBODY").innerHTML = html;
-    },
-    setCSSRules: function (cssRules) {
-        var textRules = [];
-        var id = "xfSettingsCSS";
-        this.removeElByID(id);
-        if (cssRules.length > 0) {
-            cssRules.map(function (rule) {
-                var text = "#xf_MODAL_CONTAINER " + rule.target + "{" + rule.rule + ":" + rule.value + "}";
-                textRules.push(text);
-            });
-        }
-        var animationDuration = parseInt(this.getValue("animation_duration"));
-        var animationDurationCSS = "#xf_MODAL_CONTAINER #xfMODALCONTENT{" + "animation-duration: " + animationDuration + "ms;" + "-webkit-transition: all " + animationDuration + "ms;" + "transition: all " + animationDuration + "ms;" + "transition-duration: " + animationDuration + "ms;}";
-
-        textRules.push(animationDurationCSS);
-        var style = document.createElement('style');
-        style.type = 'text/css';
-        style.id = id;
-        style.innerHTML = textRules.join("\n\n");
-        this.head.appendChild(style);
-    },
-    removeElByID: function (id) {
-        var elem = document.getElementById(id);
-        if (elem) {
-            elem.parentElement.removeChild(elem);
-        }
-    },
-    reset: function () {
-        this.removeElByID("xf_MODAL_CONTAINER");
-        xfContentLocker = new CPBContentLocker();
-    },
-    addCompletions: function (arr) {
-        if (this.constructed === false) {
-            //Dont run anything if not constructed
-            return false;
-        }
-        var arrayLength = arr.length;
-        var newLeads = false;
-        for (var i = 0; i < arrayLength; i++) {
-            var visitor_id = parseInt(arr[i].visitor_id);
-            var lead_id = parseInt(arr[i].lead_id);
-            var points = parseInt(arr[i].points);
-            if (this.completedLeads.indexOf(lead_id) == -1) {
-                //New lead!
-                this.visitor_id = visitor_id;
-                newLeads = true;
-
-                this.completedLeads.push(lead_id);
-                this.completedPoints += points;
-            }
-        }
-        if (newLeads) {
-            this.checkComplete();
-        }
-    },
-    checkComplete: function () {
-        if (this.completedLeads.length < this.requiredLeads) {
-            alert("Completed " + this.completedLeads.length + " out of " + this.requiredLeads + " offers!");
-        } else if (this.completedPoints < this.requiredPoints) {
-            alert("Completed " + this.completedPoints + " out of " + this.requiredPoints + " points!");
-        } else {
-            this.offersComplete({
-                visitor_id: this.visitor_id,
-                points: this.completedPoints,
-                leads: this.completedLeads
-            });
-        }
-    },
-    convertHex: function (hex, opacity) {
-        opacity = parseFloat(opacity);
-        hex = hex.replace('#', '');
-        var r = parseInt(hex.substring(0, 2), 16);
-        var g = parseInt(hex.substring(2, 4), 16);
-        var b = parseInt(hex.substring(4, 6), 16);
-
-        return 'rgba(' + r + ',' + g + ',' + b + ',' + opacity + ')';
-    },
-    offersComplete: function (data) {
-        var closeType = this.getValue('onClose');
-        var url;
-        if (typeof this.settings.onComplete == "function") {
-            var cont = this.settings.onComplete(data);
-            if (cont === false) {
-                return false;
-            }
-        }
-        if (typeof xfComplete == "function") {
-            xfComplete();
-        }
-        if (typeof this.settings.redirect !== "undefined") {
-            url = this.settings.redirect;
-            window.location = url;
-            this.changeHTML("Offer complete! <a href='" + url + "'>Click here</a> to continue");
-            return false;
-        }
-        if (closeType === "close_locker") {
-            this.closeLocker();
-            return false;
-        }
-        if (closeType === "redirect") {
-            url = this.getValue('onCloseURL');
-            url = url.replace('%lead_id%', this.completedLeads[0]);
-            url = url.replace('%visitor_id%', this.visitor_id);
-            window.location = url;
-            this.changeHTML("Offer complete! <a href='" + url + "'>Click here</a> to continue");
-            return false;
-        }
-        this.callback('offersComplete', {});
-    },
-    getIframeHTML: function () {
-        return '<iframe src="' + this.urls.iframeOnly + '" height="100%" marginwidth="0" marginheight="0" align="middle" frameborder="0" width="100%" ></iframe>';
-    },
-    setParamsFromSettings: function () {
-        if (typeof this.settings.params == 'object') {
-            var k;
-            for (k in this.settings.params) {
-                var value = this.settings.params[k];
-                this.setParam(k, value);
-            }
-        }
-        var i;
-        for (i = 1; i <= 4; i++) {
-            var iKey = 's' + i;
-            if (!this.extraParams[iKey]) {
-                var p = this.getQueryParam(iKey);
-                if (p !== '') this.extraParams[iKey] = p;
-            }
-        }
-
-    },
-    getParamString: function (arrayOfKeys) {
-        var i;
-        var p = [];
-        for (i = 0; i < arrayOfKeys.length; i++) {
-            var key = arrayOfKeys[i];
-            var value = this.optionalParameters[key];
-            p.push(key + '=' + value);
-        }
-        return p.join("&");
-    },
-    setURLS: function () {
-        //var p = this.protocol + this.d3 + "/public/";
-        var p = "https://" + this.d3 + "/public/";
-        var c = "https://" + this.d3 + "/";
-        var hString = "h"+this.getRandomString(10,14);
-        var q = this.paramsToQuery(this.extraParams);
-
-        this.urls.iframe = p + "ct?" + q + '&' + this.getParamString([
-            'it',
-            'w',
-            'h',
-            'key',
-            'm',
-            'r'
-        ]);
-        this.urls.feed = p + "f_it?" + q + '&' + this.getParamString([
-            'it',
-            'w',
-            'h',
-            'key',
-            'm',
-            'callback'
-        ]);
-        this.urls.iframeOnly = p + "i_fr?" + q + '&' + this.getParamString([
-            'it',
-            'w',
-            'h',
-            'key',
-            'm',
-            'r'
-        ]);
-
-
-
-        this.urls.js = c + "" + hString + '.' + this.settings.it + "." + this.settings.key + "." + this.optionalParameters.m + "." + "js" + (this.settings.preview === true ? ("?t=" + (new Date()).getTime()) : '')
-        //this.urls.js = p + "external/v2/" + ((this.settings.preview === true) ? "preview" : 'htmlxf') + '.' + this.settings.it + "." + this.settings.key + "." + this.optionalParameters.m + "." + "js" + (this.settings.preview === true ? ("?t=" + (new Date()).getTime()) : '')
-
-        this.urls.css = p + "external/css_frontXF.css";
-        this.urls.specific_css = p + "clockers/";
-        this.urls.check = p + "external/check.php?" + this.getParamString(['it']) + "&time=";
-        this.urls.impression = p + "external/impression.php?" + this.getParamString(['it']) + "&time=";
-        this.urls.guid = p + "guid?" + q + '&e=';
-
-        return this;
-    },
-    setTemplateCSSDir: function (dir) {
-        var url = this.urls.specific_css + dir + "/cssXF.css";
-        var specificCSSID = "xfSPECIFICSTYLE";
-
-        var l = document.createElement("link");
-        l.setAttribute("data-it", this.settings.it);
-        l.rel = "stylesheet";
-        l.id = specificCSSID;
-        l.href = url;
-        document.getElementsByTagName("head")[0].appendChild(l);
-
-    },
-    setCookie: function (name, value, days) {
-        var expires = "";
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + (value || "") + expires + "; path=/";
-    },
-    getCookie: function (name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-    }
-
-
-};
- 
-
-
-function xfLock() {
-    xfContentLocker.openLocker();
-}
-
-function xfGetFeedURL() {
-    return xfContentLocker.urls.feed;
-}
-
-function xfGetIframeURL() {
-    return xfContentLocker.urls.iframe;
-}
-
-function xfGetIframeHTML() {
-    return xfContentLocker.getIframeHTML();
-}
-
-function xfUnlock() {
-    xfContentLocker.closeLocker();
-}
-
-function xfOfferComplete(data) {
-    //CPABUILDContentLocker.offerComplete(data);
-}
-
-function xfOffersComplete(arr) {
-    xfContentLocker.addCompletions(arr);
-}
-
-function xfCheckForLead(testing) {
-    xfContentLocker.checkLead(testing);
-}
-
-function xfComplete() {
-    //Rewrite this function, it's called when locker has completed requirements.
-}
-
-</script>
-
-
-
   
   <style>
-    body, html {
+    :root {
+      --primary-dark: #0a1a1a;
+      --secondary-dark: #132525;
+      --accent-green: #2a9d8f;
+      --accent-gold: #e9c46a;
+      --accent-blue: #264653;
+      --accent-red: #e76f51;
+      --text-light: #f0f7f4;
+      --text-muted: #a3b9b6;
+      --shadow-dark: rgba(0, 0, 0, 0.6);
+      --shadow-glow: rgba(42, 157, 143, 0.3);
+      --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
       font-family: 'Poppins', sans-serif;
-      background: url('https://i.postimg.cc/B6cYsN5q/99-nights-in-the-forest.png') ;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: #fff;
-      text-align: center;
-      
-}
-    h1, h2, .pack div, #page-title {
-  font-family: 'Fredoka', sans-serif;
-}
-
-button {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-    .header img {
-      max-width: 120px;
-      height: auto;
-      margin-top: 20px;
+      background: 
+        radial-gradient(ellipse at top, var(--primary-dark) 0%, #000 100%),
+        url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover no-repeat;
+      color: var(--text-light);
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
     }
-    .packs {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .pack {
-      background: url('https://i.postimg.cc/fRk6n5WY/GF.png') ;
-background-size: cover;
-      padding: 15px;
-      border-radius: 10px;
-      transition: transform 0.2s ease, background-color 0.3s ease;
-      box-shadow: 0 20px 10px rgba(1, 0, 0, 0.10);
-      font-weight: bold;
-      text-align: center;
-    }
-    .pack:hover {
-      transform: scale(1.1);
-      background: rgba(255, 255, 255, 0.4);
-    }
-    .pack img {
-      width: 100px;
-      margin-bottom: 10px;
-    }
-    .points {
-            margin-top: 8px;
-            background: #fff;
-            padding: 10px;
-            border-radius: 8px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #080808;
-        }
-    .pack button {
-      display: block;
+    
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
-      padding: 10px 15px;
-      background-color: #f2f2f0;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(42, 157, 143, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(233, 196, 106, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: -1;
+    }
+    
+    /* Header */
+    .main-header {
+      text-align: center;
+      padding: 1.5rem 1rem 1rem;
+      position: relative;
+      z-index: 10;
+    }
+    
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+    }
+    
+    .logo-img {
+      height: 70px;
+      filter: drop-shadow(0 0 10px rgba(233, 196, 106, 0.5));
+      transition: var(--transition);
+    }
+    
+    .logo-img:hover {
+      transform: scale(1.05) rotate(5deg);
+    }
+    
+    .title-section {
+      margin-bottom: 1.5rem;
+    }
+    
+    .main-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(to right, var(--accent-gold), var(--accent-green));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 2px 10px var(--shadow-glow);
+      letter-spacing: 1px;
+    }
+    
+    .subtitle {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.1rem;
+      color: var(--accent-red);
+      letter-spacing: 2px;
+      position: relative;
+      display: inline-block;
+    }
+    
+    .subtitle::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--accent-red), transparent);
+    }
+    
+    .timer-container {
+      background: rgba(10, 26, 26, 0.7);
+      border: 1px solid rgba(42, 157, 143, 0.3);
+      border-radius: 12px;
+      padding: 1rem;
+      max-width: 500px;
+      margin: 1.5rem auto;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 5px 20px var(--shadow-dark);
+    }
+    
+    .timer-title {
+      font-size: 1rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    
+    .timer {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      font-family: 'Orbitron', sans-serif;
+    }
+    
+    .time-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .time-value {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      padding: 0.5rem;
+      min-width: 70px;
+      text-shadow: 0 0 10px rgba(233, 196, 106, 0.5);
+    }
+    
+    .time-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+    
+    /* Packs Grid */
+    .packs-section {
+      padding: 1rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--accent-gold);
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 3px;
+      background: linear-gradient(to right, transparent, var(--accent-green), transparent);
+    }
+    
+    .packs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    
+    .pack-card {
+      background: linear-gradient(145deg, rgba(19, 37, 37, 0.8), rgba(10, 26, 26, 0.9));
+      border-radius: 15px;
+      overflow: hidden;
+      transition: var(--transition);
+      border: 1px solid rgba(42, 157, 143, 0.2);
+      position: relative;
+      box-shadow: 0 5px 15px var(--shadow-dark);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .pack-card:hover {
+      transform: translateY(-10px);
+      border-color: var(--accent-green);
+      box-shadow: 0 10px 25px var(--shadow-dark), 0 0 20px var(--shadow-glow);
+    }
+    
+    .pack-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, var(--accent-green), var(--accent-gold));
+      z-index: 1;
+    }
+    
+    .pack-header {
+      padding: 1.2rem 1rem 0.5rem;
+      text-align: center;
+      position: relative;
+    }
+    
+    .pack-badge {
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      background: var(--accent-red);
+      color: white;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+    
+    .pack-image {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin: 0 auto 0.8rem;
+      filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+      transition: var(--transition);
+    }
+    
+    .pack-card:hover .pack-image {
+      transform: scale(1.1);
+    }
+    
+    .pack-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--accent-gold);
+      margin-bottom: 0.3rem;
+    }
+    
+    .pack-desc {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      min-height: 40px;
+    }
+    
+    .pack-body {
+      padding: 0 1rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .pack-spots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.8rem 0;
+      font-size: 0.9rem;
+    }
+    
+    .spots-count {
+      color: var(--accent-green);
+      font-weight: 600;
+      margin-left: 0.3rem;
+    }
+    
+    .pack-footer {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+    
+    .unlock-btn {
+      background: linear-gradient(to right, var(--accent-blue), var(--accent-green));
+      color: white;
       border: none;
-      color: #000;
-      border-radius: 5px;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
       cursor: pointer;
-      font-weight: bold;
-      margin-top: 10px;
+      transition: var(--transition);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 10px rgba(38, 70, 83, 0.4);
     }
-    .pack button:hover {
-      background-color: #004ba1;
-      color: #fff;
+    
+    .unlock-btn:hover {
+      background: linear-gradient(to right, var(--accent-green), var(--accent-blue));
+      transform: translateY(-3px);
+      box-shadow: 0 7px 15px rgba(38, 70, 83, 0.5);
     }
-    /* Modal Styles */
-    .modal, .modal-generate, .verification-modal {
+    
+    .unlock-btn:active {
+      transform: translateY(-1px);
+    }
+    
+    /* Modals */
+    .modal-overlay {
       display: none;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
       justify-content: center;
       align-items: center;
-      z-index: 1000;
+      animation: fadeIn 0.3s ease;
     }
-   .modal-content, .modal-generate-content {
-      background: url('https://i.postimg.cc/wTwf7Spv/ds.png') ;
-      color: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .modal-container {
+      background: linear-gradient(145deg, var(--secondary-dark), var(--primary-dark));
+      border-radius: 20px;
+      width: 90%;
+      max-width: 500px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(42, 157, 143, 0.2);
+      animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    @keyframes slideUp {
+      from { transform: translateY(50px) scale(0.9); opacity: 0; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+    
+    .modal-header {
+      background: linear-gradient(to right, var(--accent-blue), var(--accent-green));
+      padding: 1.5rem;
       text-align: center;
-      width: 300px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-      font-family: 'Fredoka', sans-serif;
-}
-
-    .verification-modal .modal-content {
-      background: url('https://i.postimg.cc/wTwf7Spv/ds.png') ;
-      color: #ffffff;
-      padding: 20px;
-      border-radius: 15px;
-      text-align: center;
-      width: 350px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      position: relative;
     }
-    .verification-icon {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      animation: rotate 1s linear infinite;
-      color: #007BFF;
+    
+    .modal-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.8rem;
+      color: white;
     }
-    @keyframes rotate {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-    .modal-content input, .modal-generate-content button {
-      width: 80%;
-      padding: 10px;
-      margin: 10px auto;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    .modal-content button, .modal-generate-content button {
-      padding: 10px 20px;
-      background-color: #f2f2f0;
-      border: none;
-      border-radius: 5px;
-      color: #000;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    .modal-content button:hover, .modal-generate-content button:hover {
-      background-color: #004ba1;
-      color: #fff;
-    }
-    .close-btn {
+    
+    .close-modal {
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 1rem;
+      right: 1.5rem;
       background: none;
       border: none;
-      color: #fff;
-      font-size: 1.5rem;
+      color: white;
+      font-size: 1.8rem;
       cursor: pointer;
+      transition: var(--transition);
     }
-    .progress-bar {
-      width: 80%;
-      background: #ffffff;
-      border-radius: 10px;
-      overflow: hidden;
-      margin: 20px auto;
+    
+    .close-modal:hover {
+      transform: rotate(90deg);
     }
-    .progress-bar div {
-      height: 20px;
-      width: 0;
-      background: #1e90ff;
-      border-radius: 10px;
-      transition: width 0.3s ease;
+    
+    .modal-body {
+      padding: 2rem;
     }
-    .verify-btn {
-      display: none;
-      padding: 15px 30px;
-      background: linear-gradient(145deg, #007bff, #0056b3);
+    
+    .modal-item-image {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      margin: 0 auto 1.5rem;
+      display: block;
+      filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.7));
+    }
+    
+    .modal-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .form-label {
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+    
+    .form-input {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(42, 157, 143, 0.4);
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      color: white;
+      font-size: 1rem;
+      transition: var(--transition);
+    }
+    
+    .form-input:focus {
+      outline: none;
+      border-color: var(--accent-green);
+      box-shadow: 0 0 0 2px rgba(42, 157, 143, 0.2);
+    }
+    
+    .modal-btn {
+      background: linear-gradient(to right, var(--accent-green), var(--accent-blue));
+      color: white;
       border: none;
-      border-radius: 10px;
-      color: #fff;
-      font-size: 1.2rem;
-      font-weight: bold;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
       cursor: pointer;
-      margin: 20px auto;
+      transition: var(--transition);
+      margin-top: 0.5rem;
+    }
+    
+    .modal-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 7px 15px rgba(38, 70, 83, 0.5);
+    }
+    
+    /* Progress Modal */
+    .progress-container {
       text-align: center;
     }
+    
+    .loader-animation {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1.5rem 0;
+    }
+    
+    .loader-dot {
+      width: 20px;
+      height: 20px;
+      background: var(--accent-green);
+      border-radius: 50%;
+      margin: 0 5px;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+    
+    .loader-dot:nth-child(2) { animation-delay: 0.2s; }
+    .loader-dot:nth-child(3) { animation-delay: 0.4s; }
+    .loader-dot:nth-child(4) { animation-delay: 0.6s; }
+    
+    @keyframes pulse {
+      0%, 100% { transform: scale(0.8); opacity: 0.5; }
+      50% { transform: scale(1.2); opacity: 1; }
+    }
+    
+    .progress-text {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+    }
+    
+    .progress-bar {
+      height: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(to right, var(--accent-green), var(--accent-gold));
+      border-radius: 6px;
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+    
+    /* Verification Modal */
+    .verification-icon {
+      font-size: 4rem;
+      color: var(--accent-green);
+      margin: 1.5rem 0;
+      animation: spin 2s linear infinite;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .verification-message {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-light);
+      min-height: 60px;
+    }
+    
+    .verify-btn {
+      background: linear-gradient(to right, var(--accent-red), #d35400);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      display: none;
+      margin: 0 auto;
+    }
+    
     .verify-btn.active {
       display: block;
     }
+    
     .verify-btn:hover {
-      background: linear-gradient(145deg, #0056b3, #007bff);
+      transform: translateY(-3px);
+      box-shadow: 0 7px 15px rgba(231, 111, 81, 0.4);
     }
-    .fade {
-      opacity: 0;
-      transition: opacity 0.5s ease;
+    
+    /* Footer */
+    .main-footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(10, 26, 26, 0.8);
+      border-top: 1px solid rgba(42, 157, 143, 0.2);
+      margin-top: 3rem;
     }
-    .fade-in {
-      opacity: 1;
+    
+    .footer-text {
+      color: var(--text-muted);
+      font-size: 0.9rem;
     }
-    /* Animation for modal appearance */
-@keyframes modalFadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.modal-content {
-  animation: modalFadeIn 0.4s ease;
-}
-   @keyframes flipIn {
-  0% {
-    opacity: 0;
-    transform: rotateX(-90deg) scale(0.8);
-  }
-  60% {
-    opacity: 1;
-    transform: rotateX(20deg) scale(1.05);
-  }
-  100% {
-    transform: rotateX(0deg) scale(1);
-  }
-}
-
-.modal-generate-content {
-  transform-origin: top center;
-  animation: flipIn 0.6s ease-out;
-}
-    .complete-btn.active {
-  animation: blink 1s infinite;
-}
-@keyframes blink {
-  0%, 100% { background-color: #019112; }
-  50% { background-color: #12d24f; }
-}
-    .progress-bar div {
-  box-shadow: 0 0 10px #1e90ff, 0 0 20px #1e90ff;
-}
-
-
-
-
-    /* Popup styles */
-        .popup {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            display: none;
-            justify-content: center;
-            align-items: center;
-        }
-        .popup-content {
-            background: linear-gradient(135deg, #ffffff, #f7f7f7);
-            padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    width: 300px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;  /* تغيير التوجيه إلى عمودي */
-    justify-content: space-between;  /* توزيع الأزرار والمسافات بينهما */
-}
-        .popup-content img {
-            width: 250px;
-            height: 250px;
-            margin: 0 auto 40px;
-        }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    
+    .footer-link {
+      color: var(--accent-green);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+    
+    .footer-link:hover {
+      color: var(--accent-gold);
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .main-title {
+        font-size: 2rem;
+      }
       
-        .popup-content button {
-    width: 100%;  /* جعل الأزرار تأخذ عرض النافذة بالكامل */
-    padding: 10px;
-    margin: 5px 0; /* إضافة مسافة بين الأزرار */
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* تغيير مكان الزر "Open Locker" ليظهر في الأسفل */
-#open-btn {
-    margin-top: auto; /* الدفع للأعلى */
-}
-
-/* تصميم الزر "NEXT" */
-#popup-points {
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* تدرج لوني جذاب */
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: none;
-}
-
-#popup-points:hover {
-    transform: scale(1.05);
-    background: linear-gradient(135deg, #2575fc, #6a11cb);
-}
-
-#open-btn {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6);
-    color: white;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#open-btn:hover {
-    background-color: #9b59b6;
-    transform: scale(1.05);
-}
+      .packs-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+      }
       
-        .close-popup {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        /* Loader (دائرة التحميل) */
-        .loader {
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid #3498db;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: auto;
-            display: none;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* زر Open Locker */
-        .open-btn {
-            background: green;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            display: none;
-        }
-
-        /* اهتزاز النافذة */
-        @keyframes shake {
-            0% { transform: translateX(0); }
-            20% { transform: translateX(-5px); }
-            40% { transform: translateX(5px); }
-            60% { transform: translateX(-5px); }
-            80% { transform: translateX(5px); }
-            100% { transform: translateX(0); }
-        }
-
-        .shake {
-            animation: shake 0.5s ease;
-        }
-
-        /* iframe for locker */
-        .locker-iframe {
-            width: 100%;
-            border: none;
-            height: 100%;
-            min-height: 500px; /* Minimum height to prevent small content from being cut off */
-            box-sizing: border-box;
-        }
-
-        /* Container for iframe (wrapper) */
-        .locker-popup-content {
-            position: relative;
-            max-width: 80%;
-            max-height: 80%;
-            width: 90%;
-            height: 90%;
-        }
+      .timer {
+        flex-wrap: wrap;
+      }
+      
+      .time-value {
+        font-size: 1.5rem;
+        min-width: 60px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .main-title {
+        font-size: 1.7rem;
+      }
+      
+      .packs-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .modal-container {
+        width: 95%;
+      }
+    }
+  </style>
   
-/* New Popup Styles */
-.purchase-popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup-content {
-  background-color: #333;
-  padding: 25px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 380px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.selected-images-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin: 15px auto;
-}
-
-.item-popup-image-small {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #444;
-}
-
-.input-group input {
-  width: 92%;
-  padding: 15px 12px;
-  background-color: white;
-  color: #333;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.popup-buttons {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.cancel-btn, .free-btn {
-  flex: 1;
-  padding: 12px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.cancel-btn {
-  background-color: #555;
-  color: white;
-  border: none;
-}
-
-.free-btn {
-  background-color: white;
-  border: none;
-  color: #333;
-}
-   .modal-item-img {
-  width: 120px;
-  height: auto;
-  margin: 0 auto 20px;
-  display: none;
-  display: block;
-  animation: zoomIn 0.4s ease;
-}
-
-
-/* اختياري: أنيميشن بسيط */
-@keyframes zoomIn {
-  from { transform: scale(0.5); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
-    .roblox-loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.roblox-loader div {
-  width: 14px;
-  height: 14px;
-  background-color: #ffffff;
-  border-radius: 3px;
-  animation: bounce 1.2s infinite ease-in-out both;
-}
-
-.roblox-loader div:nth-child(1) {
-  animation-delay: -0.4s;
-}
-.roblox-loader div:nth-child(2) {
-  animation-delay: -0.2s;
-}
-.roblox-loader div:nth-child(3) {
-  animation-delay: 0s;
-}
-.roblox-loader div:nth-child(4) {
-  animation-delay: 0.2s;
-}
-
-@keyframes bounce {
-  0%, 80%, 100% {
-    transform: scale(0.8);
-    opacity: 0.5;
-  }
-  40% {
-    transform: scale(1.3);
-    opacity: 1;
-  }
-}
-
-.verification-spinner {
-  border: 6px solid #f3f3f3;            /* الخلفية */
-  border-top: 6px solid #3498db;        /* الجزء الدوار */
-  border-radius: 50%;                   /* جعله دائريًا */
-  width: 60px;
-  height: 60px;
-  animation: spin 1s linear infinite;
-  margin: 0 auto 20px;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-.square-loader {
-  width: 64px;
-  height: 64px;
-  position: relative;
-  margin: 0 auto 20px;
-}
-
-.square-loader div {
-  width: 16px;
-  height: 16px;
-  background: #ffffff;
-  position: absolute;
-  animation: squareFade 1.2s linear infinite;
-}
-
-.square-loader div:nth-child(1) {
-  top: 0;
-  left: 0;
-  animation-delay: 0s;
-}
-.square-loader div:nth-child(2) {
-  top: 0;
-  right: 0;
-  animation-delay: 0.3s;
-}
-.square-loader div:nth-child(3) {
-  bottom: 0;
-  right: 0;
-  animation-delay: 0.6s;
-}
-.square-loader div:nth-child(4) {
-  bottom: 0;
-  left: 0;
-  animation-delay: 0.9s;
-}
-
-@keyframes squareFade {
-  0%, 100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
-
-
-</style>
-<link rel="me" href="https://www.blogger.com/profile/05362478462587326863" />
-<link rel="me" href="https://www.blogger.com/profile/01302986773087202131" />
-<link rel="me" href="https://www.blogger.com/profile/08093615751670618814" />
+  <link rel="me" href="https://www.blogger.com/profile/05362478462587326863" />
+  <link rel="me" href="https://www.blogger.com/profile/01302986773087202131" />
+  <link rel="me" href="https://www.blogger.com/profile/08093615751670618814" />
 </head>
 <body>
 
-    <div id="google_translate_element" style="display:none;"></div>
-
-
- 
-  
-  <div class="header">
-    <img src="https://i.postimg.cc/qvyZjkth/TheDeer.webp" alt="Logo">
-    <h1 id="page-title">99 Nights in the Forest – Spots Will End in 1 Day</h1>
-  </div>
-
-  <div id="gem-packs" class="packs fade fade-in">
-   
-    
-	
-    <div class="pack">
-      <img src="https://i.postimg.cc/cLCNL6Z0/700-diamonds.webp" alt="Pack 1">
-      <div>Diamonds - 700 Gems Code</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/cLCNL6Z0/700-diamonds.webp')">Unlock</button>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="https://i.postimg.cc/qvyZjkth/TheDeer.webp" alt="99 Nights Logo" class="logo-img">
     </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/7PpP2Y9V/Cyborgclass.webp" alt="Pack 1">
-      <div>Cyborg Class – 224 Spots Left
+    
+    <div class="title-section">
+      <h1 class="main-title">99 Nights in the Forest</h1>
+      <div class="subtitle">Exclusive In-Game Rewards</div>
+    </div>
+    
+    <div class="timer-container">
+      <div class="timer-title">Spots Will End In:</div>
+      <div class="timer">
+        <div class="time-unit">
+          <div class="time-value" id="hours">23</div>
+          <div class="time-label">HOURS</div>
+        </div>
+        <div class="time-unit">
+          <div class="time-value" id="minutes">59</div>
+          <div class="time-label">MINUTES</div>
+        </div>
+        <div class="time-unit">
+          <div class="time-value" id="seconds">59</div>
+          <div class="time-label">SECONDS</div>
+        </div>
       </div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/7PpP2Y9V/Cyborgclass.webp')">Unlock</button>
     </div>
-    
-    <div class="pack">
-      <img src="https://i.postimg.cc/j250r72F/no-Filter-(1).webp" alt="Pack 1">
-      <div>Cyborg Lasser - 149 Spots Left</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/j250r72F/no-Filter-(1).webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/g2zCwfCs/Pyromancerclass.webp" alt="Pack 2">
-      <div>Pyromaniac</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/g2zCwfCs/Pyromancerclass.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/Sxgwcgqh/Big-Game-Masterclass.webp" alt="Pack 3">
-      <div>Big Game Hunter</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/Sxgwcgqh/Big-Game-Masterclass.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/L63d8Hbh/Assassinclass.webp" alt="Pack 4">
-      <div>Assassin</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/L63d8Hbh/Assassinclass.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/3JT5hy9P/Blacksmithclass.webp" alt="Pack 5">
-      <div>Blacksmith</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/3JT5hy9P/Blacksmithclass.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/B6kVmtCF/MEDKIIIT.png" alt="Pack 1">
-      <div>Medkit</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/B6kVmtCF/MEDKIIIT.png')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/XJgH3pVt/Bandage-Close-Up.png" alt="Pack 1">
-      <div>Bandage</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/XJgH3pVt/Bandage-Close-Up.png')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/7hdgykTp/Good-sack.webp" alt="Pack 6">
-      <div>Good sack</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/7hdgykTp/Good-sack.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/CMQC8j6m/Giant-sack.webp" alt="Pack 6">
-      <div>Giant sack</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/CMQC8j6m/Giant-sack.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/rFq0ZjY8/Carrot.webp" alt="Pack 6">
-      <div>Carrot</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/rFq0ZjY8/Carrot.webp')">Unlock</button>
-    </div>
-    
-    <div class="pack">
-      <img src="https://i.postimg.cc/J7NHQvx6/Pumpkin.webp" alt="Pack 6">
-      <div>Pumpkin</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/J7NHQvx6/Pumpkin.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/T3wyfw6F/Ribs-Uncooked.webp" alt="Pack 6">
-      <div>Ribs-Uncooked</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/T3wyfw6F/Ribs-Uncooked.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/zvFLXH3Z/Strong-light.webp" alt="Pack 6">
-      <div>Strong-light</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/zvFLXH3Z/Strong-light.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/yd9gtbHN/Old-flashlight.webp" alt="Pack 6">
-      <div>Old-flashlight</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/yd9gtbHN/Old-flashlight.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/8cSJSmpm/Poison-Spear.webp" alt="Pack 6">
-      <div>Poison-Spear</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/8cSJSmpm/Poison-Spear.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/N0Kr70Cm/Trident-New.webp" alt="Pack 6">
-      <div>Trident-New</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/N0Kr70Cm/Trident-New.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/htyddmsK/Ice-Sword-Render.webp" alt="Pack 6">
-      <div>Ice-Sword-Render</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/htyddmsK/Ice-Sword-Render.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/TPH7PhFs/FSFSFS.png" alt="Pack 6">
-      <div>Flamethrower</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/TPH7PhFs/FSFSFS.png')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/3xJGN1gL/Tacticalshotgunbetter.webp" alt="Pack 6">
-      <div>Tacticalshotgun</div>
-       <button onclick="openModal('Grape', 'https://i.postimg.cc/3xJGN1gL/Tacticalshotgunbetter.webp')">Unlock</button>
-    </div>
-    
-    <div class="pack">
-      <img src="https://i.postimg.cc/rwHx0Wy5/SDFGDG.png" alt="Pack 6">
-      <div>Rifle</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/rwHx0Wy5/SDFGDG.png')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/qMGnpSCh/Oil-barrel.webp" alt="Pack 6">
-      <div>Oil barrel</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/qMGnpSCh/Oil-barrel.webp')">Unlock</button>
-    </div>
-    <div class="pack">
-      <img src="https://i.postimg.cc/L6SLK2hF/Fuel-canister.webp" alt="Pack 6">
-      <div>Fuel canister</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/L6SLK2hF/Fuel-canister.webp')">Unlock</button>
-    </div>
-    
-    <div class="pack">
-      <img src="https://i.postimg.cc/8kMM0jpb/UFO-Scrap.webp" alt="Pack 6">
-      <div>UFO Scrap</div>
-      <button onclick="openModal('Grape', 'https://i.postimg.cc/8kMM0jpb/UFO-Scrap.webp')">Unlock</button>
-    </div>
-    
-    
-    
-  </div>
+  </header>
 
-  
-
-  <!-- Modal 1: Player ID -->
-  <div class="modal" id="modal">
-    <div class="modal-content">
-      <button class="close-btn" onclick="closeModal()">&times;</button>
-      <img id="modal-item-img" src="" alt="Selected Item" class="modal-item-img" />
-
+  <!-- Main Content -->
+  <main class="packs-section">
+    <h2 class="section-title">Available Rewards</h2>
+    
+    <div class="packs-grid" id="gem-packs">
+      <!-- Pack 1 -->
+      <div class="pack-card">
+        <div class="pack-header">
+          <img src="https://i.postimg.cc/cLCNL6Z0/700-diamonds.webp" alt="700 Diamonds" class="pack-image">
+          <h3 class="pack-title">700 Diamonds</h3>
+          <p class="pack-desc">Premium currency for in-game purchases</p>
+        </div>
+        <div class="pack-body">
+          <div class="pack-spots">
+            <i class="fas fa-user-friends"></i> 
+            <span>Spots Left: <span class="spots-count">Unlimited</span></span>
+          </div>
+        </div>
+        <div class="pack-footer">
+          <button class="unlock-btn" onclick="openModal('700 Diamonds Code', 'https://i.postimg.cc/cLCNL6Z0/700-diamonds.webp')">
+            <i class="fas fa-unlock-alt"></i> Unlock Now
+          </button>
+        </div>
+      </div>
       
-      <p>Enter Your Username </p>
-      <input type="text" placeholder="Enter Username" required>
-      <button onclick="openGenerateModal()">Next</button>
+      <!-- Pack 2 -->
+      <div class="pack-card">
+        <div class="pack-header">
+          <div class="pack-badge">Popular</div>
+          <img src="https://i.postimg.cc/7PpP2Y9V/Cyborgclass.webp" alt="Cyborg Class" class="pack-image">
+          <h3 class="pack-title">Cyborg Class</h3>
+          <p class="pack-desc">Advanced robotic combat abilities</p>
+        </div>
+        <div class="pack-body">
+          <div class="pack-spots">
+            <i class="fas fa-user-friends"></i> 
+            <span>Spots Left: <span class="spots-count">224</span></span>
+          </div>
+        </div>
+        <div class="pack-footer">
+          <button class="unlock-btn" onclick="openModal('Cyborg Class', 'https://i.postimg.cc/7PpP2Y9V/Cyborgclass.webp')">
+            <i class="fas fa-unlock-alt"></i> Unlock Now
+          </button>
+        </div>
+      </div>
+      
+      <!-- Pack 3 -->
+      <div class="pack-card">
+        <div class="pack-header">
+          <img src="https://i.postimg.cc/j250r72F/no-Filter-(1).webp" alt="Cyborg Laser" class="pack-image">
+          <h3 class="pack-title">Cyborg Laser</h3>
+          <p class="pack-desc">High-energy precision weapon</p>
+        </div>
+        <div class="pack-body">
+          <div class="pack-spots">
+            <i class="fas fa-user-friends"></i> 
+            <span>Spots Left: <span class="spots-count">149</span></span>
+          </div>
+        </div>
+        <div class="pack-footer">
+          <button class="unlock-btn" onclick="openModal('Cyborg Laser', 'https://i.postimg.cc/j250r72F/no-Filter-(1).webp')">
+            <i class="fas fa-unlock-alt"></i> Unlock Now
+          </button>
+        </div>
+      </div>
+      
+      <!-- Pack 4 -->
+      <div class="pack-card">
+        <div class="pack-header">
+          <img src="https://i.postimg.cc/g2zCwfCs/Pyromancerclass.webp" alt="Pyromaniac" class="pack-image">
+          <h3 class="pack-title">Pyromaniac Class</h3>
+          <p class="pack-desc">Master of fire and destruction</p>
+        </div>
+        <div class="pack-body">
+          <div class="pack-spots">
+            <i class="fas fa-user-friends"></i> 
+            <span>Spots Left: <span class="spots-count">312</span></span>
+          </div>
+        </div>
+        <div class="pack-footer">
+          <button class="unlock-btn" onclick="openModal('Pyromaniac Class', 'https://i.postimg.cc/g2zCwfCs/Pyromancerclass.webp')">
+            <i class="fas fa-unlock-alt"></i> Unlock Now
+          </button>
+        </div>
+      </div>
+      
+      <!-- Additional packs would continue here -->
+      
+    </div>
+    
+    <h2 class="section-title">Consumables & Equipment</h2>
+    
+    <div class="packs-grid" id="consumable-packs">
+      <!-- Pack 5 -->
+      <div class="pack-card">
+        <div class="pack-header">
+          <img src="https://i.postimg.cc/B6kVmtCF/MEDKIIIT.png" alt="Medkit" class="pack-image">
+          <h3 class="pack-title">Medkit</h3>
+          <p class="pack-desc">Restores health in emergency situations</p>
+        </div>
+        <div class="pack-body">
+          <div class="pack-spots">
+            <i class="fas fa-user-friends"></i> 
+            <span>Spots Left: <span class="spots-count">478</span></span>
+          </div>
+        </div>
+        <div class="pack-footer">
+          <button class="unlock-btn" onclick="openModal('Medkit', 'https://i.postimg.cc/B6kVmtCF/MEDKIIIT.png')">
+            <i class="fas fa-unlock-alt"></i> Unlock Now
+          </button>
+        </div>
+      </div>
+      
+      <!-- Pack 6 -->
+      <div class="pack-card">
+        <div class="pack-header">
+          <img src="https://i.postimg.cc/XJgH3pVt/Bandage-Close-Up.png" alt="Bandage" class="pack-image">
+          <h3 class="pack-title">Bandage</h3>
+          <p class="pack-desc">Basic wound treatment item</p>
+        </div>
+        <div class="pack-body">
+          <div class="pack-spots">
+            <i class="fas fa-user-friends"></i> 
+            <span>Spots Left: <span class="spots-count">512</span></span>
+          </div>
+        </div>
+        <div class="pack-footer">
+          <button class="unlock-btn" onclick="openModal('Bandage', 'https://i.postimg.cc/XJgH3pVt/Bandage-Close-Up.png')">
+            <i class="fas fa-unlock-alt"></i> Unlock Now
+          </button>
+        </div>
+      </div>
+      
+      <!-- Pack 7 -->
+      <div class="pack-card">
+        <div class="pack-header">
+          <img src="https://i.postimg.cc/htyddmsK/Ice-Sword-Render.webp" alt="Ice Sword" class="pack-image">
+          <h3 class="pack-title">Ice Sword</h3>
+          <p class="pack-desc">Freezing blade with special effects</p>
+        </div>
+        <div class="pack-body">
+          <div class="pack-spots">
+            <i class="fas fa-user-friends"></i> 
+            <span>Spots Left: <span class="spots-count">189</span></span>
+          </div>
+        </div>
+        <div class="pack-footer">
+          <button class="unlock-btn" onclick="openModal('Ice Sword', 'https://i.postimg.cc/htyddmsK/Ice-Sword-Render.webp')">
+            <i class="fas fa-unlock-alt"></i> Unlock Now
+          </button>
+        </div>
+      </div>
+      
+      <!-- Pack 8 -->
+      <div class="pack-card">
+        <div class="pack-header">
+          <img src="https://i.postimg.cc/TPH7PhFs/FSFSFS.png" alt="Flamethrower" class="pack-image">
+          <h3 class="pack-title">Flamethrower</h3>
+          <p class="pack-desc">Area denial and crowd control weapon</p>
+        </div>
+        <div class="pack-body">
+          <div class="pack-spots">
+            <i class="fas fa-user-friends"></i> 
+            <span>Spots Left: <span class="spots-count">76</span></span>
+          </div>
+        </div>
+        <div class="pack-footer">
+          <button class="unlock-btn" onclick="openModal('Flamethrower', 'https://i.postimg.cc/TPH7PhFs/FSFSFS.png')">
+            <i class="fas fa-unlock-alt"></i> Unlock Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal 1: Username Input -->
+  <div class="modal-overlay" id="username-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modal-item-title">Claim Reward</h2>
+        <button class="close-modal" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img id="modal-item-image" src="" alt="Selected Item" class="modal-item-image">
+        <form class="modal-form" id="username-form">
+          <div class="form-group">
+            <label class="form-label" for="username">Enter Your Username</label>
+            <input type="text" id="username" class="form-input" placeholder="Your in-game username" required>
+          </div>
+          <button type="button" class="modal-btn" onclick="openProgressModal()">
+            <i class="fas fa-arrow-right"></i> Continue
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 
-  <!-- Modal 2: Generate -->
-  <div class="modal-generate" id="modal-generate">
-    <div class="modal-generate-content">
-      <div class="roblox-loader" id="roblox-loader">
-  <div></div><div></div><div></div><div></div>
-</div>
-      <p>Checking available spots...</p>
-      <div class="progress-bar">
-        <div id="progress"></div>
+  <!-- Modal 2: Progress -->
+  <div class="modal-overlay" id="progress-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2 class="modal-title">Checking Availability</h2>
+        <button class="close-modal" onclick="closeProgressModal()">&times;</button>
       </div>
-      <button class="complete-btn" id="complete-btn" onclick="showVerificationModal()">Continue</button>
+      <div class="modal-body">
+        <div class="progress-container">
+          <div class="loader-animation">
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+          </div>
+          <p class="progress-text" id="progress-text">Connecting to 99 Nights server...</p>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <button class="modal-btn" id="continue-btn" onclick="openVerificationModal()">
+            <i class="fas fa-check"></i> Continue
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Modal 3: Verification -->
-  <div class="verification-modal" id="verification-modal">
-    <div class="modal-content">
-      <div class="square-loader">
-  <div></div><div></div><div></div><div></div>
-</div>
-
-      <p id="verification-message">Connecting to  99 Nights In The Forest Server...</p>
-      <p id="pre-verify-message" style="display: none;">Please verify that you’re not a robot to send your item successfully. Click the button and complete one task.</p>
-      <button id="verify-button" class="verify-btn" onclick="_Th()">Verify Now</button>
+  <div class="modal-overlay" id="verification-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2 class="modal-title">Verification Required</h2>
+        <button class="close-modal" onclick="closeVerificationModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="progress-container">
+          <div class="loader-animation">
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+            <div class="loader-dot"></div>
+          </div>
+          <p class="verification-message" id="verification-message">Connecting to 99 Nights in the Forest Server...</p>
+          <p id="pre-verify-message" style="display: none; color: var(--text-muted); margin-bottom: 1.5rem;">
+            Please verify that you're not a robot to send your item successfully. Click the button and complete one task.
+          </p>
+          <button id="verify-button" class="verify-btn" onclick="_Th()">
+            <i class="fas fa-shield-alt"></i> Verify Now
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="popup" id="popup">
-        <div class="popup-content" id="popup-content">
-            
-            <img id="popup-img" src="" alt="Item">
-            <h2 id="popup-title"></h2>
-            <button class="points-btn" id="popup-points" onclick="startLoading()">NEXT</button>
-            <div class="loader" id="loader"></div>
-            
-        </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p class="footer-text">&copy; 2025 99 Nights in the Forest Generator. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#" class="footer-link">Privacy Policy</a>
+      <a href="#" class="footer-link">Terms of Service</a>
+      <a href="#" class="footer-link">Contact</a>
     </div>
-
-
-
-
-    
-    <script type="text/javascript">
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement({
-        pageLanguage: 'en',  // your default language
-        autoDisplay: false
-    }, 'google_translate_element');
-}
-
-// Detect user language
-var userLang = (navigator.language || navigator.userLanguage).split('-')[0]; // e.g., "fr"
-
-// Load Google Translate script
-var gtScript = document.createElement('script');
-gtScript.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-document.body.appendChild(gtScript);
-
-// Try to auto-select detected language after load
-gtScript.onload = function() {
-    setTimeout(function() {
-        var select = document.querySelector('.goog-te-combo');
-        if(select && select.value !== userLang){
-            select.value = userLang;
-            select.dispatchEvent(new Event('change'));
-        }
-    }, 1500); // wait 1.5 seconds to ensure Google Translate is ready
-};
-</script>
-
-
-
-
-
-
-
-
-
-
+  </footer>
 
   <script>
-    function showCoins() {
-      const gemPacks = document.getElementById('gem-packs');
-      const coinPacks = document.getElementById('coin-packs');
-      const pageTitle = document.getElementById('page-title');
-
-      gemPacks.classList.remove('fade-in');
-      gemPacks.classList.add('fade');
-      setTimeout(() => {
-        gemPacks.style.display = 'none';
-        coinPacks.style.display = 'grid';
-        coinPacks.classList.add('fade-in');
-        pageTitle.textContent = 'Coin Packs';
-      }, 500);
+    // Timer functionality
+    function updateTimer() {
+      const hoursElement = document.getElementById('hours');
+      const minutesElement = document.getElementById('minutes');
+      const secondsElement = document.getElementById('seconds');
+      
+      // Set target time (24 hours from now)
+      const now = new Date();
+      const targetTime = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+      
+      // Update every second
+      const timerInterval = setInterval(() => {
+        const now = new Date();
+        const diff = targetTime - now;
+        
+        if (diff <= 0) {
+          clearInterval(timerInterval);
+          hoursElement.textContent = '00';
+          minutesElement.textContent = '00';
+          secondsElement.textContent = '00';
+          return;
+        }
+        
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+        
+        hoursElement.textContent = hours.toString().padStart(2, '0');
+        minutesElement.textContent = minutes.toString().padStart(2, '0');
+        secondsElement.textContent = seconds.toString().padStart(2, '0');
+      }, 1000);
     }
-
+    
+    // Modal functionality
+    let currentItemTitle = '';
+    let currentItemImage = '';
+    
     function openModal(title, imgSrc) {
-  const modal = document.getElementById('modal');
-  modal.style.display = 'flex';
-
-  const content = modal.querySelector('.modal-content');
-  content.style.animation = 'none';
-  void content.offsetWidth;
-  content.style.animation = 'modalFadeIn 0.4s ease';
-
-  // تحديث الصورة
-  const img = document.getElementById('modal-item-img');
-  if (imgSrc) {
-    img.src = imgSrc;
-    img.style.display = 'block';
-  } else {
-    img.style.display = 'none';
-  }
-}
-
-    function closeModal() {
-      document.getElementById('modal').style.display = 'none';
+      currentItemTitle = title;
+      currentItemImage = imgSrc;
+      
+      document.getElementById('modal-item-title').textContent = `Claim ${title}`;
+      document.getElementById('modal-item-image').src = imgSrc;
+      document.getElementById('username-modal').style.display = 'flex';
     }
-
-    function openGenerateModal() {
-  closeModal();
-
-  const modalGenerate = document.getElementById('modal-generate');
-  const content = modalGenerate.querySelector('.modal-generate-content');
-
-  modalGenerate.style.display = 'flex';
-
-  // إعادة تشغيل الأنيميشن
-  content.style.animation = 'none';
-  void content.offsetWidth;
-  content.style.animation = 'flipIn 0.6s ease-out';
-
-  startProgress();
-}
-
-
-
+    
+    function closeModal() {
+      document.getElementById('username-modal').style.display = 'none';
+    }
+    
+    function openProgressModal() {
+      closeModal();
+      
+      const username = document.getElementById('username').value;
+      if (!username.trim()) {
+        alert('Please enter your username');
+        return;
+      }
+      
+      document.getElementById('progress-modal').style.display = 'flex';
+      startProgress();
+    }
+    
+    function closeProgressModal() {
+      document.getElementById('progress-modal').style.display = 'none';
+      document.getElementById('continue-btn').style.display = 'none';
+    }
+    
     function startProgress() {
-      const progress = document.getElementById('progress');
+      const progressFill = document.getElementById('progress-fill');
+      const progressText = document.getElementById('progress-text');
+      const continueBtn = document.getElementById('continue-btn');
+      
       let width = 0;
+      const messages = [
+        "Connecting to 99 Nights server...",
+        "Checking available spots...",
+        "Reserving your reward...",
+        "Verifying account eligibility...",
+        "Almost complete..."
+      ];
+      let messageIndex = 0;
+      
+      continueBtn.style.display = 'none';
+      progressText.textContent = messages[messageIndex];
+      
       const interval = setInterval(() => {
         if (width >= 100) {
           clearInterval(interval);
-          document.getElementById('complete-btn').classList.add('active');
+          progressText.textContent = "Spots available! Ready to claim your reward.";
+          continueBtn.style.display = 'block';
         } else {
-          width += 10;
-          progress.style.width = width + '%';
+          width += 2;
+          progressFill.style.width = width + '%';
+          
+          // Update message every 20% progress
+          if (width % 20 === 0 && messageIndex < messages.length - 1) {
+            messageIndex++;
+            progressText.textContent = messages[messageIndex];
+          }
         }
-      }, 500);
+      }, 50);
     }
-
-    function showVerificationModal() {
-      document.getElementById('modal-generate').style.display = 'none';
-      const verificationModal = document.getElementById('verification-modal');
+    
+    function openVerificationModal() {
+      closeProgressModal();
+      document.getElementById('verification-modal').style.display = 'flex';
+      startVerificationSequence();
+    }
+    
+    function closeVerificationModal() {
+      document.getElementById('verification-modal').style.display = 'none';
+      document.getElementById('verify-button').classList.remove('active');
+      document.getElementById('pre-verify-message').style.display = 'none';
+    }
+    
+    function startVerificationSequence() {
       const verificationMessage = document.getElementById('verification-message');
       const preVerifyMessage = document.getElementById('pre-verify-message');
       const verifyButton = document.getElementById('verify-button');
-
-      verificationModal.style.display = 'flex';
-
+      
       let step = 0;
       const steps = [
-        "Connecting to 99 nights in the forest...",
-        "Connected server successfully!",
-        "Verifying user...",
+        "Connecting to 99 Nights in the Forest...",
+        "Connected to server successfully!",
+        "Verifying user account...",
         "User verified successfully!",
-        "Finalizing..."
+        "Checking reward availability..."
       ];
-
+      
       const interval = setInterval(() => {
         if (step < steps.length) {
           verificationMessage.textContent = steps[step];
-          verificationMessage.style.color = step === 1 || step === 3 ? "green" : "#49a3f2";
+          verificationMessage.style.color = step === 1 || step === 3 ? "var(--accent-green)" : "var(--text-light)";
           step++;
         } else {
           clearInterval(interval);
           verificationMessage.textContent = "Spots still available!";
-          verificationMessage.style.color = "green";
+          verificationMessage.style.color = "var(--accent-green)";
           preVerifyMessage.style.display = 'block';
           verifyButton.classList.add('active');
         }
-      }, 2000);
+      }, 1500);
     }
-
-    function completeVerification() {
-      alert("Verification successful! You can now claim your gems.");
-    }
-    function openPopup(title, imgSrc, points) {
-            document.getElementById("popup-title").innerText = "Claim " + title;
-            document.getElementById("popup-img").src = imgSrc;
-            document.getElementById("popup-points").innerText = points + " NEXT";
-            document.getElementById("popup").style.display = "flex";
-            document.getElementById("popup-points").style.display = "block";
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("open-btn").style.display = "none";
-        }
-
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
-
-        function startLoading() {
-            let popupContent = document.getElementById("popup-content");
-
-            document.getElementById("popup-points").style.opacity = "0";
-            popupContent.classList.add("shake");
-
-            setTimeout(() => {
-                popupContent.classList.remove("shake");
-                document.getElementById("popup-points").style.display = "none";
-                document.getElementById("loader").style.display = "block";
-            }, 500);
-
-            setTimeout(() => {
-                document.getElementById("loader").style.display = "none";
-                document.getElementById("open-btn").style.display = "block";
-            }, 5000);
-        }
-
-        
     
-  
-function showPopup(itemTitle, itemImg) {
-  const popup = document.getElementById("purchase-popup");
-  const popupContent = document.getElementById("popup-content");
-
-  popupContent.innerHTML = `
-    <div class="popup-header">
-      <h3>Get Item</h3>
-    </div>
-    <div class="selected-images-container">
-      <img src="${itemImg}" alt="Selected Item" class="item-popup-image-small">
-    </div>
-    <p class="item-confirm">Would you like to get "<span>${itemTitle}</span>"?</p>
-    <div class="input-group">
-      <input type="text" id="username-input" placeholder="Enter your Username">
-    </div>
-    <div class="popup-buttons">
-      <button class="cancel-btn" onclick="closePurchasePopup()">Cancel</button>
-      <button class="free-btn" onclick="completeVerification()">Free</button>
-    </div>
-  `;
-
-  popup.style.display = "flex";
-}
-
-function closePurchasePopup() {
-  document.getElementById("purchase-popup").style.display = "none";
-}
-
-</script>
-  <!-- Footer Section -->
-  <div class="footer">
-    &copy; 2025 99 Nights in the Forest  Generator. All rights reserved.
-  </div>
-
-
-<div class="purchase-popup" id="purchase-popup">
-  <div class="popup-content" id="popup-content"></div>
-</div>
-
-
-
-<script>
-
-
-
-
-  (function(window) {
-
-  if (!!window.cookieChoices) {
-    return window.cookieChoices;
-  }
-
-  var document = window.document;
-  // IE8 does not support textContent, so we should fallback to innerText.
-  var supportsTextContent = 'textContent' in document.body;
-
-  var cookieChoices = (function() {
-
-    var cookieName = 'displayCookieNotice';
-    var cookieConsentId = 'cookieChoiceInfo';
-    var divClass = 'cookie-choices-info';
-    var innerDivClass = 'cookie-choices-inner';
-    var textSpan = 'cookie-choices-text';
-    var buttonsClass = 'cookie-choices-buttons';
-    var buttonClass = 'cookie-choices-button';
-    var singletonClass = 'singleton-element';
-    var dismissLinkId = 'cookieChoiceDismiss';
-
-    function _createHeaderElement(cookieText, dismissText, linkText, linkHref) {
-      // Clean the HTML Tags from cookieText
-      if (cookieText && cookieText.replace) {
-        cookieText = cookieText.replace(/<[^>]*>/g,'');
-      }
-
-      var cookieInnerElement = document.createElement('div');
-      cookieInnerElement.className = innerDivClass;
-      cookieInnerElement.appendChild(_createConsentText(cookieText));
-
-      var buttonsElement = document.createElement('span');
-      buttonsElement.className = buttonsClass;
-      cookieInnerElement.appendChild(buttonsElement);
-
-      if (!!linkText && !!linkHref) {
-        buttonsElement.appendChild(_createInformationLink(linkText, linkHref));
-      }
-
-      buttonsElement.appendChild(_createDismissLink(dismissText));
-
-      var cookieConsentElement = document.createElement('div');
-      cookieConsentElement.id = cookieConsentId;
-      cookieConsentElement.className = divClass + ' ' + singletonClass;
-      cookieConsentElement.appendChild(cookieInnerElement);
-      return cookieConsentElement;
-    }
-
-    function _createStyleElement() {
-      var style = document.createElement('style');
-      style.className = singletonClass;
-      style.type = 'text/css';
-      _setElementText(style,
-          '.' + divClass + ' { ' +
-              'position:fixed;width:100%;background-color:#666;margin:0;' +
-              'left:0;top:0;padding:0;z-index:4000;text-align:center;' +
-              'color:#fff;line-height:140%;padding:10px 0;' +
-              'font-family:roboto,Arial; } ' +
-          '.' + divClass + ' .' + innerDivClass + ' { ' +
-              'position:relative;width:initial;margin:0;left:0;top:0; } ' +
-          '.' + divClass + ' .' + textSpan + ' { ' +
-              'display:inline-block;vertical-align:middle;font-size:16px;' +
-              'margin:10px 20px;color:#ccc;max-width:800px;' +
-              'text-align:left; }' +
-          '.' + divClass + ' .' + buttonsClass + ' { ' +
-              'display:inline-block;vertical-align:middle;' +
-              'white-space:nowrap;margin:0 10px; } ' +
-          '.' + divClass + ' .' + buttonClass + ':hover { ' +
-              ' color: #fff; } ' +
-          '.' + divClass + ' .' + buttonClass + ' { ' +
-              'font-weight:bold;text-transform:UPPERCASE;' +
-              'white-space:nowrap;' +
-              'color:#eee;margin-left:8px;padding:0 6px; ' +
-              'text-decoration:none; }');
-      document.getElementsByTagName('head')[0].appendChild(style);
-    }
-
-    function _setElementText(element, text) {
-      if (supportsTextContent) {
-        element.textContent = text;
-      } else {
-        element.innerText = text;
-      }
-    }
-
-    function _createConsentText(cookieText) {
-      var consentText = document.createElement('span');
-      _setElementText(consentText, cookieText);
-      consentText.className = textSpan;
-      return consentText;
-    }
-
-    function _createDismissLink(dismissText) {
-      var dismissLink = document.createElement('a');
-      _setElementText(dismissLink, dismissText);
-      dismissLink.id = dismissLinkId;
-      dismissLink.href = '#';
-      dismissLink.className = buttonClass;
-      return dismissLink;
-    }
-
-    function _createInformationLink(linkText, linkHref) {
-      var infoLink = document.createElement('a');
-      _setElementText(infoLink, linkText);
-      infoLink.href = linkHref;
-      infoLink.target = '_blank';
-      infoLink.className = buttonClass;
-      return infoLink;
-    }
-
-    function _dismissLinkClick(e) {
-      _saveUserPreference();
-      _removeCookieConsent();
-      e.stopPropagation && e.stopPropagation();
-      e.cancelBubble = true;
-      return false;
-    }
-
-    function _showCookieConsent(cookieText, dismissText, linkText, linkHref) {
-      if (_shouldDisplayConsent()) {
-        _removeCookieConsent();
-        _createStyleElement();
-        var consentElement =
-            _createHeaderElement(cookieText, dismissText, linkText, linkHref);
-        var fragment = document.createDocumentFragment();
-        fragment.appendChild(consentElement);
-        document.body.appendChild(fragment.cloneNode(true));
-        document.getElementById(dismissLinkId).onclick = _dismissLinkClick;
-      }
-    }
-
-    function _removeCookieConsent() {
-      var cookieChoiceElement = document.getElementById(cookieConsentId);
-      if (cookieChoiceElement != null) {
-        cookieChoiceElement.parentNode.removeChild(cookieChoiceElement);
-      }
-    }
-
-    function _saveUserPreference() {
-      // Set the cookie expiry to one year after today.
-      var expiryDate = new Date();
-      expiryDate.setFullYear(expiryDate.getFullYear() + 1);
-      document.cookie =
-          cookieName + '=y; path=/; expires=' + expiryDate.toGMTString();
-    }
-
-    function _shouldDisplayConsent() {
-      // Display the header only if the cookie has not been set.
-      return !document.cookie.match(new RegExp(cookieName + '=([^;]+)'));
-    }
-
-    var exports = {};
-    exports.showCookieConsentBar = _showCookieConsent;
-    return exports;
-  })();
-
-  window.cookieChoices = cookieChoices;
-  return cookieChoices;
-})(this);
-</script>
-  
-  
+    // Initialize timer when page loads
+    window.addEventListener('DOMContentLoaded', () => {
+      updateTimer();
+      
+      // Add hover effects to pack cards
+      const packCards = document.querySelectorAll('.pack-card');
+      packCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-10px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
